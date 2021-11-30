@@ -1,0 +1,188 @@
+:root {
+  --main-title-color: #ffffff;
+  --main-text-color: #212121;
+  --secondary-color-of-the-text: #757575;
+  --text-accent-color: #2196f3;
+  --button-color: #f5f4fa;
+  --text-white-transparent: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  background-color: #ffffff *;
+  color: var(--secondary-color-of-the-text);
+  font-family: Roboto, sans-serif;
+}
+/*заголовок #FFFFFF*/
+/*колір основновного текста #212121 */
+/*вториний колір тексту #757575*/
+/*акцент текста #2196F3*/
+
+/*фон 1 #FFFFFF*/
+/*фон 2 #2F303A*/
+/*фон 3 #F5F4FA*/
+/*фон 4 #2F303A*/
+
+.link {
+  color: var(--main-text-color);
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  font-style: normal;
+}
+.accent {
+  color: var(--text-accent-color);
+}
+.list,
+li {
+  list-style: none;
+}
+
+/*site nav*/
+
+.site-nav .forces {
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+}
+.site-nav .forces:hover,
+.site-nav .forces:focus {
+  color: var(--text-accent-color);
+}
+.site-nav .forces.current {
+  color: var(--text-accent-color);
+}
+
+.contacts-list .forces {
+  color: var(--secondary-color-of-the-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+}
+.contacts-list .forces:hover,
+.contacts-list .forces:focus {
+  color: var(--text-accent-color);
+}
+.contacts-list .forces.current {
+  color: var(--text-accent-color);
+}
+
+/*hero*/
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  color: var(--main-title-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+}
+
+.button {
+  color: var(--main-title-color);
+  background-color: var(--text-accent-color);
+  cursor: pointer;
+  font-family: Roboto;
+}
+
+.button.primary {
+  color: var(--main-title-color);
+  background-color: var(--text-accent-color);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  font-family: Roboto;
+}
+
+.button.secondary {
+  background-color: var(--button-color);
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.44;
+  cursor: pointer;
+  font-family: Roboto;
+}
+
+.feature-list .title {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.feature-list .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/*section*/
+.section-title {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.command-title {
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.command-title .text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+}
+.menu-title {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+.menu-title .text {
+  color: var(--secondary-color-of-the-text);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+/*footer*/
+.footer {
+  background-color: #2f303a;
+}
+.address {
+  color: var(--main-title-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+}
+.address-list .forces {
+  color: var(--text-white-transparent);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71px;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.address-list .forces:focus {
+  color: var(--text-white-transparent);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71px;
+  text-decoration: none;
+  font-style: normal;
+}
+.studio {
+  color: var(--main-title-color);
+}
