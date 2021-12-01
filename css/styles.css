@@ -29,13 +29,12 @@ body {
 /*фон 4 #2F303A*/
 .container {
   outline: 2px solid blue;
-}
-.page-header {
-  width: 1230px;
+  width: 1200px;
   padding: 15px;
   padding: 15px;
-  margin: 0;
-  background-color: aqua;
+  margin: 0 auto;
+  background-color: violet;
+ 
 }
 
 .link {
@@ -46,30 +45,72 @@ body {
   line-height: 1.19;
   text-decoration: none;
   font-style: normal;
+  margin-left: 107px;
+  
+
 }
+
 .accent {
   color: var(--text-accent-color);
 }
 .list,
 li {
   list-style: none;
-}
+  margin: 0;
+  padding: 0;
+  
 
+}
 /*site nav*/
 
+.main-nav {
+ display: flex; 
+ align-items: center;
+}
+ .site-nav {
+  display: flex;
+  margin-left: 93px;
+  } 
+
+
+ .site-nav .item {
+margin-right: 50px;
+
+}
+
+.site-nav .item:not (:last-child) {
+margin-right: 0px;
+}
 .site-nav .forces {
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  
 }
 .site-nav .forces:hover,
 .site-nav .forces:focus {
   color: var(--text-accent-color);
 }
+
 .site-nav .forces.current {
   color: var(--text-accent-color);
+}
+.contacts-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: auto;
+  margin-right: 107px;
+}
+
+.contacts-list .item + .item {
+margin-left: 50px;
+
 }
 
 .contacts-list .forces {
@@ -88,7 +129,9 @@ li {
 }
 
 /*hero*/
-
+.hero {
+  text-align: center;
+}
 .hero-title {
   color: var(--main-title-color);
   font-weight: 900;
@@ -107,8 +150,9 @@ li {
   cursor: pointer;
   font-family: Roboto;
   padding: 10px 32px;
-  min-width: 136px;
+  min-width: 73px;
   text-align: center;
+  border: 1px solid var(--text-white-transparent);
 }
 
 .button.primary {
@@ -120,7 +164,6 @@ li {
   line-height: 1.87;
   font-family: Roboto;
   padding: 6px 22px;
-  min-width: 29px;
 }
 
 .button.secondary {
@@ -134,8 +177,16 @@ li {
   padding: 6px 22px;
 }
 .feature-list {
-  margin-top: 0;
-  margin-bottom: 0;
+ 
+  display: flex;
+  flex-wrap: wrap;
+  margin: -30px -75px;
+}
+.feature-list .item {
+  width: 270px;
+  margin: 30px 75px;
+  background-color: yellow;
+  
 }
 
 .feature-list .title {
@@ -151,11 +202,15 @@ li {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  margin-top: 0;
-  margin-bottom: 0px;
+
+  
 }
 
 /*section*/
+.section {
+  padding-top: 0;
+  padding-bottom: 0;
+  
 .section-title {
   color: var(--main-text-color);
   font-weight: 700;
@@ -164,13 +219,11 @@ li {
   text-align: center;
   margin-top: 0px;
   margin-bottom: 50px;
-  background-color: yellowgreen;
 }
 
 .command {
   margin-top: 0;
   margin-bottom: 0;
-  background-color: tomato;
 }
 .command-title {
   color: var(--main-text-color);
@@ -203,6 +256,7 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
+  margin-bottom: 4px;
 }
 
 /*footer*/
