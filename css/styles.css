@@ -28,13 +28,10 @@ body {
 /*фон 3 #F5F4FA*/
 /*фон 4 #2F303A*/
 .container {
-  outline: 2px solid blue;
   width: 1200px;
   padding: 15px;
   padding: 15px;
   margin: 0 auto;
-  background-color: violet;
- 
 }
 
 .link {
@@ -45,9 +42,6 @@ body {
   line-height: 1.19;
   text-decoration: none;
   font-style: normal;
-  margin-left: 107px;
-  
-
 }
 
 .accent {
@@ -58,28 +52,24 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
-  
-
 }
 /*site nav*/
 
 .main-nav {
- display: flex; 
- align-items: center;
+  display: flex;
+  align-items: center;
 }
- .site-nav {
+.site-nav {
   display: flex;
   margin-left: 93px;
-  } 
+}
 
-
- .site-nav .item {
-margin-right: 50px;
-
+.site-nav .item {
+  margin-right: 50px;
 }
 
 .site-nav .item:not (:last-child) {
-margin-right: 0px;
+  margin-right: 0px;
 }
 .site-nav .forces {
   color: var(--main-text-color);
@@ -90,7 +80,6 @@ margin-right: 0px;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  
 }
 .site-nav .forces:hover,
 .site-nav .forces:focus {
@@ -105,12 +94,10 @@ margin-right: 0px;
   padding: 0;
   display: flex;
   margin-left: auto;
-  margin-right: 107px;
 }
 
 .contacts-list .item + .item {
-margin-left: 50px;
-
+  margin-left: 50px;
 }
 
 .contacts-list .forces {
@@ -154,6 +141,13 @@ margin-left: 50px;
   text-align: center;
   border: 1px solid var(--text-white-transparent);
 }
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.buttons: not(: last-child) {
+  margin-right: 8px;
+}
 
 .button.primary {
   color: var(--main-title-color);
@@ -176,17 +170,37 @@ margin-left: 50px;
   font-family: Roboto;
   padding: 6px 22px;
 }
-.feature-list {
- 
+.image {
+  flex-direction: row;
+  padding: 24px;
+}
+.card-set {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  margin: -30px -75px;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.card-set > .item {
+  flex-basis: calc(100 % / 3-30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  margin-top: -94px;
+  margin-left: -30px;
 }
 .feature-list .item {
-  width: 270px;
-  margin: 30px 75px;
-  background-color: yellow;
-  
+  margin-top: 94px;
+  margin-left: 30px;
+  flex-basis: calc(100 % / 4);
 }
 
 .feature-list .title {
@@ -202,15 +216,14 @@ margin-left: 50px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-
-  
 }
 
 /*section*/
 .section {
-  padding-top: 0;
-  padding-bottom: 0;
-  
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .section-title {
   color: var(--main-text-color);
   font-weight: 700;
@@ -220,10 +233,27 @@ margin-left: 50px;
   margin-top: 0px;
   margin-bottom: 50px;
 }
+.clien-list {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+  width: 1170px;
+}
+.clien-list li {
+  flex-wrap: nowrap;
+}
+.clien-list li:not(:last-child) {
+  margin-right: 30px;
+}
 
 .command {
   margin-top: 0;
   margin-bottom: 0;
+  display: flex;
+  padding: 0px;
+}
+.command li:not(:last-child) {
+  margin-right: 30px;
 }
 .command-title {
   color: var(--main-text-color);
@@ -239,7 +269,10 @@ margin-left: 50px;
   font-size: 16px;
   line-height: 1.18;
 }
-
+.center {
+  text-align: center;
+  padding: 24px;
+}
 p {
   margin-top: 0;
   margin-bottom: 30px;
@@ -250,18 +283,23 @@ p {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  margin-bottom: 4px;
+  margin-top: 0px;
 }
 .menu-title .text {
   color: var(--secondary-color-of-the-text);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
-  margin-bottom: 4px;
 }
 
 /*footer*/
 .footer {
   background-color: #2f303a;
+  width: 1200px;
+  padding: 15px;
+  padding: 15px;
+  margin: 0 auto;
 }
 .address {
   color: var(--main-title-color);
@@ -278,7 +316,9 @@ p {
   text-decoration: none;
   font-style: normal;
 }
-
+.address-list {
+  padding-left: 0;
+}
 .address-list .forces:focus {
   color: var(--text-white-transparent);
   font-weight: 400;
@@ -289,4 +329,9 @@ p {
 }
 .studio {
   color: var(--main-title-color);
+}
+
+.mail {
+  flex-direction: column;
+  justify-content: flex-start;
 }
