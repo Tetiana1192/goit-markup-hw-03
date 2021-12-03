@@ -29,8 +29,8 @@ body {
 /*фон 4 #2F303A*/
 .container {
   width: 1200px;
-  padding: 15px;
-  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -118,6 +118,8 @@ li {
 /*hero*/
 .hero {
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   color: var(--main-title-color);
@@ -208,8 +210,8 @@ li {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  margin-top: 0;
   margin-bottom: 10px;
+  margin-top: 0px;
 }
 
 .feature-list .text {
@@ -220,8 +222,8 @@ li {
 
 /*section*/
 .section {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .section-title {
@@ -230,7 +232,6 @@ li {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  margin-top: 0px;
   margin-bottom: 50px;
 }
 .clien-list {
@@ -274,8 +275,7 @@ li {
   padding: 24px;
 }
 p {
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .menu-title {
