@@ -34,7 +34,7 @@ body {
   margin: 0 auto;
 }
 
-.line {
+header {
   border-bottom: 1px solid #ececec;
 }
 .link {
@@ -150,7 +150,6 @@ li {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  margin-top: 50px;
 }
 .buttons:not(:last-child) {
   margin-right: 8px;
@@ -175,7 +174,7 @@ li {
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.44;
+  line-height: 1.62;
   cursor: pointer;
   font-family: Roboto;
   padding: 6px 22px;
@@ -189,8 +188,11 @@ li {
 
 .image {
   flex-direction: row;
-  padding: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
   border: 1px solid #ececec;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .card-set {
   margin: 0;
@@ -238,8 +240,13 @@ li {
 }
 
 /*section*/
-.section {
+.section-model {
+  padding-top: 47px;
   padding-bottom: 47px;
+}
+
+.section {
+  padding-bottom: 94px;
   padding-top: 94px;
 }
 
@@ -314,7 +321,8 @@ p {
 /*footer*/
 .footer {
   background-color: #2f303a;
-  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .address {
   color: var(--main-title-color);
@@ -330,10 +338,9 @@ p {
   line-height: 1.71px;
   text-decoration: none;
   font-style: normal;
-  padding: 9px;
 }
 .address-list {
-  padding-left: 0;
+  padding-left: 0px;
 }
 .address-list .forces:focus {
   color: var(--text-white-transparent);
@@ -347,9 +354,11 @@ p {
   color: var(--main-title-color);
 }
 
-.mail {
+.container-mail {
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
