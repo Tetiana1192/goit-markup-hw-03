@@ -237,19 +237,27 @@ li {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 /*section*/
-.section-model {
-  padding-top: 47px;
+.section-one {
+  padding-top: 94px;
   padding-bottom: 47px;
+}
+.section-two {
+  padding-top: 47px;
+  padding-bottom: 94px;
 }
 
 .section {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-
+.section-portfolio {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
 .section-title {
   color: var(--main-text-color);
   font-weight: 700;
@@ -335,18 +343,19 @@ p {
   color: var(--text-white-transparent);
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71px;
+  line-height: 1.71;
   text-decoration: none;
   font-style: normal;
 }
 .address-list {
   padding-left: 0px;
+  margin-bottom: 9px;
 }
 .address-list .forces:focus {
   color: var(--text-white-transparent);
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71px;
+  line-height: 1.71;
   text-decoration: none;
   font-style: normal;
 }
@@ -361,4 +370,5 @@ p {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
