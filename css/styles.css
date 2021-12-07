@@ -150,9 +150,11 @@ li {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  padding-left: 0px;
+  margin-top: 0px;
 }
-.buttons:not(:last-child) {
-  margin-right: 8px;
+.buttons li:not(:last-child) {
+  margin-right: 10px;
 }
 
 .button.primary {
@@ -338,6 +340,7 @@ p {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+  letter-spacing: 0.03em;
 }
 .address-list .forces {
   color: var(--text-white-transparent);
@@ -346,10 +349,11 @@ p {
   line-height: 1.71;
   text-decoration: none;
   font-style: normal;
+  margin-top: 6px;
 }
 .address-list {
   padding-left: 0px;
-  margin-bottom: 9px;
+  margin-bottom: 0px;
 }
 .address-list .forces:focus {
   color: var(--text-white-transparent);
@@ -370,5 +374,8 @@ p {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  margin-bottom: 20px;
+}
+.address-link {
+  color: var(--main-title-color);
+  text-decoration: none;
 }
